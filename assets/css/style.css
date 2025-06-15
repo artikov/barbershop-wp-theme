@@ -1,4 +1,7 @@
 /* General resets */
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: "Open Sans", sans-serif;
 	margin: 0;
@@ -6,7 +9,7 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1480px;
 	margin: 0 auto;
 }
 
@@ -198,7 +201,7 @@ header {
 .services {
 	background-size: cover;
 	background-position: center;
-	height: 100vh;
+	min-height: 100vh;
 	position: relative;
 	color: white;
 }
@@ -282,4 +285,63 @@ header {
 	color: yellow;
 	font-weight: 600;
 	text-decoration: underline;
+}
+
+/* Work Section */
+.work {
+	background-size: repeat;
+	background-position: center;
+	background-attachment: fixed; /* ← this is the key line */
+	position: relative;
+	color: white;
+	position: relative;
+	color: white;
+}
+
+.work .overlay {
+	background: rgba(255, 255, 255, 0.718);
+	height: 100%;
+}
+
+.work-container {
+	display: flex;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	padding: 8rem 0;
+	gap: 4rem;
+}
+
+.work-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	gap: 2rem;
+	margin: 0 auto;
+}
+.work-header h2 {
+	font-size: 36px;
+	font-weight: 800;
+	margin: 0;
+}
+
+.work-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	gap: 20px;
+}
+
+.gallery-item img {
+	width: 350px;
+	height: 350px;
+	object-fit: cover;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+	transform: scale(1.03);
 }

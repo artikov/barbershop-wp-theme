@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support('post-thumbnails');
+
 function barbershop_enqueue_assets()
 {
 	wp_enqueue_style(
@@ -41,3 +43,18 @@ function barbershop_register_services_post_type()
 	]);
 }
 add_action('init', 'barbershop_register_services_post_type');
+
+function barbershop_register_work_post_type()
+{
+	register_post_type('work_item', [
+		'labels' => [
+			'name' => __('Our Work'),
+			'singular_name' => __('Work Item')
+		],
+		'public' => true,
+		'menu_icon' => 'dashicons-format-gallery',
+		'has_archive' => false,
+		'supports' => ['title', 'editor', 'thumbnail'] // ← this is key!
+	]);
+}
+add_action('init', 'barbershop_register_work_post_type');
