@@ -25,3 +25,19 @@ function barbershop_register_menus()
 	]);
 }
 add_action('after_setup_theme', 'barbershop_register_menus');
+
+function barbershop_register_services_post_type()
+{
+	register_post_type('service', [
+		'labels' => [
+			'name' => __('Services'),
+			'singular_name' => __('Service')
+		],
+		'public' => true,
+		'menu_icon' => 'dashicons-scissors',
+		'has_archive' => false,
+		'rewrite' => ['slug' => 'services'],
+		'supports' => ['title', 'editor']
+	]);
+}
+add_action('init', 'barbershop_register_services_post_type');

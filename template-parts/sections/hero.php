@@ -1,8 +1,9 @@
-<?php $home_id = get_option('page_on_front'); ?>
 <?php
+$home_id = get_option('page_on_front');
 $bg = get_field('hero_background', $home_id);
 $bg_url = is_array($bg) ? $bg['url'] : $bg;
 ?>
+
 
 <section class="hero" id="home" style="background-image: url('<?php echo esc_url($bg_url); ?>')">
 	<div class="overlay">

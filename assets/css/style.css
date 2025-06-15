@@ -193,3 +193,93 @@ header {
 	color: black;
 	border-color: orange;
 }
+
+/* Services Section */
+.services {
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+	color: white;
+}
+
+.services .overlay {
+	background: rgba(0, 0, 0, 0.718);
+	height: 100%;
+}
+
+.services-container {
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	padding: 8rem 0;
+	gap: 4rem;
+}
+
+.services-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 2px dashed #9b9b9b;
+	padding: 20px;
+	gap: 2rem;
+}
+.services-header h2 {
+	font-size: 36px;
+	font-weight: 800;
+	margin: 0;
+}
+
+.services-all {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 2px dashed #9b9b9b;
+	padding: 20px;
+	gap: 2rem;
+}
+
+/* Single Service */
+.service-box {
+	padding: 0, 20px;
+}
+
+.service-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.service-header h3 {
+	white-space: nowrap;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.dotted-line {
+	flex: 1;
+	border-bottom: 2px dashed #9b9b9b;
+	margin: 0 10px;
+	height: 0;
+}
+
+.price {
+	white-space: nowrap;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.service-box p {
+	margin-top: 10px;
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+.service-box a {
+	color: yellow;
+	font-weight: 600;
+	text-decoration: underline;
+}
