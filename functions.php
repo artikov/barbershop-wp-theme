@@ -23,7 +23,8 @@ add_action('wp_enqueue_scripts', 'barbershop_enqueue_assets');
 function barbershop_register_menus()
 {
 	register_nav_menus([
-		'main_menu' => __('Main Menu', 'barbershop-theme')
+		'main_menu' => __('Main Menu', 'barbershop-theme'),
+		'footer_menu' => __('Footer Menu', 'barbershop-theme')
 	]);
 }
 add_action('after_setup_theme', 'barbershop_register_menus');
@@ -58,3 +59,18 @@ function barbershop_register_work_post_type()
 	]);
 }
 add_action('init', 'barbershop_register_work_post_type');
+
+function barbershop_register_faq_post_type()
+{
+	register_post_type('faq_item', [
+		'labels' => [
+			'name' => __('FAQs'),
+			'singular_name' => __('FAQ Item')
+		],
+		'public' => true,
+		'menu_icon' => 'dashicons-editor-help',
+		'has_archive' => false,
+		'supports' => ['title', 'editor']
+	]);
+}
+add_action('init', 'barbershop_register_faq_post_type');
