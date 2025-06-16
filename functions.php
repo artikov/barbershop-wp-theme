@@ -5,17 +5,22 @@ add_theme_support('post-thumbnails');
 function barbershop_enqueue_assets()
 {
 	wp_enqueue_style(
-		'barbershop-google-fonts',
-		'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap',
-		false
-	);
-
-	wp_enqueue_style(
 		'barbershop-style',
-		get_template_directory_uri() . '/assets/css/style.css',
-		['barbershop-google-fonts'],
-		filemtime(get_template_directory() . '/assets/css/style.css')
+		get_template_directory_uri() . '/assets/css/style.css'
 	);
+	wp_enqueue_style('nav', get_template_directory_uri() . '/assets/css/nav.css');
+
+	// ✅ AOS CSS
+	wp_enqueue_style('aos-css', 'https://unpkg.com/aos@2.3.1/dist/aos.css', [], '2.3.1');
+
+	// ✅ AOS JS
+	wp_enqueue_script('aos-js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', [], '2.3.1', true);
+
+	// ✅ AOS Init
+	wp_add_inline_script('aos-js', 'AOS.init();');
+
+	// ✅ Font Awesome
+	wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 }
 
 add_action('wp_enqueue_scripts', 'barbershop_enqueue_assets');

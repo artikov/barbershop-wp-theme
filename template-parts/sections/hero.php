@@ -10,10 +10,10 @@ $bg_url = is_array($bg) ? $bg['url'] : $bg;
 		<div class="container">
 			<div class="hero-content">
 				<div class="hero-container">
-					<span class="hero-label"><?php the_field('hero_label', $home_id); ?></span>
-					<h1 class="hero-heading"><?php the_field('hero_heading', $home_id); ?></h1>
+					<span class="hero-label" data-aos="fade-left" data-aos-duration="800"><?php the_field('hero_label', $home_id); ?></span>
+					<h1 class="hero-heading cg-regular" data-aos="fade-right" data-aos-duration="800"><?php the_field('hero_heading', $home_id); ?></h1>
 					<p class="hero-subheading"><?php the_field('hero_subheading', $home_id); ?></p>
-					<div class="hero-buttons">
+					<div class="hero-buttons" data-aos="fade-in" data-aos-duration="800">
 						<?php if (get_field('hero_button_1_link', $home_id)): ?>
 							<a href="<?php the_field('hero_button_1_link', $home_id); ?>" class="btn"><?php the_field('hero_button_1_text', $home_id); ?></a>
 						<?php endif; ?>

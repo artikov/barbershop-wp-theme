@@ -7,7 +7,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('poppins-regular'); ?>>
 
 	<?php get_template_part('template-parts/header/nav'); ?>
 	<?php get_template_part('template-parts/sections/hero'); ?>
