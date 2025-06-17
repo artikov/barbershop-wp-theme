@@ -9,6 +9,7 @@ function barbershop_enqueue_assets()
 		get_template_directory_uri() . '/assets/css/style.css'
 	);
 	wp_enqueue_style('nav', get_template_directory_uri() . '/assets/css/nav.css');
+	wp_enqueue_style('hero', get_template_directory_uri() . '/assets/css/hero.css');
 
 	// ✅ AOS CSS
 	wp_enqueue_style('aos-css', 'https://unpkg.com/aos@2.3.1/dist/aos.css', [], '2.3.1');
