@@ -1,0 +1,32 @@
+/* FAQ Section */
+.faq-heading {
+	font-size: 44px;
+	margin: 0;
+}
+.faq-container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+	justify-content: center;
+	padding: 8rem 0;
+	color: #1a1a1a;
+}
+
+.accordion-header {
+	font-size: 16px;
+	font-weight: bold;
+	background: #f1f1f1;
+	padding: 15px;
+	margin: 0 20px;
+	border-radius: 10px;
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+}
+
+.accordion-content {
+	margin: 0 40px;
+	color: #595959;
+	font-size: 16px;
+}

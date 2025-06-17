@@ -30,7 +30,7 @@ $second_line = implode(' ', array_slice($words, 3));
 					<?php echo esc_html($second_line); ?>
 				</h1>
 				<p class="hero-subheading"><?php echo esc_html($subheading); ?></p>
-				<div class="hero-buttons" data-aos="fade-in" data-aos-duration="800" data-aos-offset="0">
+				<div class="hero-buttons cg-regular" data-aos="fade-in" data-aos-duration="800" data-aos-offset="0">
 					<a href="<?php echo esc_url($btn1_link); ?>" class="btn"><?php echo esc_html($btn1_text); ?></a>
 					<a href="<?php echo esc_url($btn2_link); ?>" class="btn"><?php echo esc_html($btn2_text); ?></a>
 				</div>

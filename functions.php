@@ -10,6 +10,13 @@ function barbershop_enqueue_assets()
 	);
 	wp_enqueue_style('nav', get_template_directory_uri() . '/assets/css/nav.css');
 	wp_enqueue_style('hero', get_template_directory_uri() . '/assets/css/hero.css');
+	wp_enqueue_style('services', get_template_directory_uri() . '/assets/css/services.css');
+	wp_enqueue_style('btns', get_template_directory_uri() . '/assets/css/btns.css');
+	wp_enqueue_style('work', get_template_directory_uri() . '/assets/css/work.css');
+	wp_enqueue_style('footer', get_template_directory_uri() . '/assets/css/footer.css');
+	wp_enqueue_style('reviews', get_template_directory_uri() . '/assets/css/reviews.css');
+	wp_enqueue_style('faqs', get_template_directory_uri() . '/assets/css/faqs.css');
+
 
 	// ✅ AOS CSS
 	wp_enqueue_style('aos-css', 'https://unpkg.com/aos@2.3.1/dist/aos.css', [], '2.3.1');

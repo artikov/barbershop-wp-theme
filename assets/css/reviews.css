@@ -1,0 +1,34 @@
+/* Reviews section */
+.reviews {
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	position: relative;
+	color: white;
+}
+.reviews .overlay {
+	background: rgba(0, 0, 0, 0.718);
+	height: 100%;
+}
+.reviews-embed {
+	margin-top: 30px;
+}
+.reviews-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 8rem 0;
+	gap: 4rem;
+}
+
+.reviews-heading {
+	font-size: 55px;
+	margin: 0;
+}
+
+.reviews-div {
+	background-color: black;
+	padding: 20px;
+	border: 2px dashed #9b9b9b;
+}
